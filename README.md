@@ -62,12 +62,11 @@ This command helps you go into other directories from your current directory.
 cd directory_name                                   # Go into the folder called `directory_name`.
                                                     # Assuming there is a directory in current working directory
                                                     # by the name of `directory_name`
+
 cd ../                                              # Change to the directory one level up
 cd ../../                                           # Change to the directory two levels up
 cd -                                                # Go back to the last directory you were in
 cd ~                                                # Go to home directory
-
-
 ```
 
 Let's say you are in `/Users/vijayantajain/COS225` and you want to go to `/Users/vijayantajain/COS125/Projects` folder. Here are series of commands you would take
@@ -78,12 +77,27 @@ Let's say you are in `/Users/vijayantajain/COS225` and you want to go to `/Users
 > cd ../                                            # Go one level up in your path i.e., go into `/Users/vijayantajain`
 > pwd                                               # Make sure you went one level up
 /Users/vijayantajain
-> cd COS125                                         # Once inside `/Users/vijayantajain/`, go into `COS125` folder
+> cd COS125/                                        # Once inside `/Users/vijayantajain/`, go into `COS125` folder
 > pwd                                               # Check where you are now
 /Users/vijayantajain/COS125
 > cd Projects                                       # Go into the `Projects` folder which is inside `COS125`
 > pwd
 /Users/vijayantajain/COS125/Projects
+```
+
+#### NOTE:
+
+If you have a space in your folder name, then you need to use the special esacpe character. For example, if your folder's name is "COS 125" then you would need to type in the following command
+
+```bash
+> pwd                                               # Find out what is your current directory
+/Users/vijayantajain/COS225
+> cd ../                                            # Go one level up in your path i.e., go into `/Users/vijayantajain`
+> pwd                                               # Make sure you went one level up
+/Users/vijayantajain
+> cd COS\ 125/                                      # The `\ ` allows you to use spaces in your path when changing directories
+> pwd                                               # Check where you are now
+/Users/vijayantajain/COS 125
 ```
 
 ## `touch`

@@ -68,6 +68,33 @@ Remove file/directory
 
 ```bash
 rm foo.txt                                          # Remove the file `foo.txt`
-rm -rf some_foo/                                 # Remove `some_foo` and its sub-content
+rm -rf some_foo/                                    # Remove `some_foo` and its sub-content
 ```
 
+## `cat`
+
+Displays content of a file
+
+```bash
+cat foo.txt
+```
+
+
+## `head`
+
+Get the top 10 lines of a file
+
+```bash
+head file.txt                                       # Get the first 10 lines of the file
+head -n N file.txt                                  # Get the first N lines of the file
+```
+
+
+## `tail`
+
+Get the last 10 lines of a file
+
+```bash
+tail file.txt                                       # Get the last 10 lines of the file
+tail -n N file.txt                                  # Get the last N lines of the file
+```

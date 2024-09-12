@@ -1,9 +1,5 @@
 # Shell Commands
 
-I am in class right now
-
-Making changes in class.
-
 This repository describes some of the basic shell commands we will learn in this course. This list acts as a starting point to use basic command line arguemnts. 
 
 

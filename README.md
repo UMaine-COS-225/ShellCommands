@@ -236,3 +236,18 @@ sixth line in the file. I am hungry now
 ok, last line in the file. This is all I can write.
 ```
 
+## `wc`
+
+We can use this command to count the contents of a file without opening the file. We can use this to count the number of lines, the size of the file in bytes, or the number of words
+
+```bash
+> wc barfoo.txt                                         # Number of lines, words, and characters
+    7   50  239 barfoo.txt
+> wc -l barfoo.txt                                      # Number of lines
+    7   barfoo.txt
+> wc -w barfoo.txt                                      # Number of words
+    50 barfoo.txt
+> wc -c barfoo.txt                                      # Number of characters
+    239 barfoo.txt
+```
+

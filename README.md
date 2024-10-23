@@ -251,3 +251,27 @@ We can use this command to count the contents of a file without opening the file
     239 barfoo.txt
 ```
 
+## `tar`
+
+Compresses file into a tarball, very similar to create zipped folder.  Assume you have a folder called `bar` which has multiple .txt files, then you can use the following command
+
+```bash
+tar -czvf files.tar.gz bar/
+```
+
+Here is what each flag in `czvf` means:
+
+* `c` - Create a tarball.
+* `z` - Use `gzip`, a program to compress file, you can use others as well.
+* `v` - Be verbose in your output.
+* `f` - Specify the name of the tarball
+
+
+
+You can also use `tar` to uncompress the files or extract the files from `.tar.gz`
+
+```bash
+tar -xzvf files.tar.gz
+```
+
+The `x` flag in `xvzf` means to extract from a tarball, instead of creating a tarball. The `z`, `v`, and `f` mean the same thing from above. 
